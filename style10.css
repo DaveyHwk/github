@@ -1,0 +1,381 @@
+body {
+  background-color: black;
+  margin: 0;
+  font-family: "Domion Gothic", sans-serif;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1; 
+  width: 100%;
+}
+
+.square {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  
+  width: 100%;
+  height: 230px;
+  
+  max-width: 813px;
+  margin: 0 auto; 
+  padding: 20px;
+  background-color: darkred; 
+  box-sizing: border-box;
+}
+
+.header-image {
+  position: relative;
+  width: 105.15%;
+  height: 85%;
+  right: 19.8px;
+  
+  top: -6.5px;
+
+  margin: 0 auto -10px;
+  z-index: 100;
+}
+
+.homeimage {
+  position: absolute;
+  top: -5px;  
+  left: 1px; 
+  width: 152px;
+}
+
+.square-text {
+  position: absolute;
+  top: 44px;
+  left: 15px;
+  font-size: 40px;
+  color: white;
+  -webkit-text-stroke: 0.7px rgb(0, 0, 0);
+  line-height: 1.2;
+  z-index: 200;
+}
+
+.square-text .indent1 {
+  margin-left: 30px;
+  z-index: 200;
+}
+
+.square-text .indent2 {
+  margin-left: 60px; 
+  z-index: 200;
+}
+
+
+
+
+
+.blue-square {
+  width: 600px;           
+  height: 1000px;          
+  margin-top: 6px;      
+  margin-left: 211.5px;
+  background-color: rgba(137, 5, 5, 0.9); 
+  border: 0.5px solid rgba(65, 0, 0, 0.8);
+  border-radius: 0.5px; 
+  padding: 20px;               
+  box-sizing: border-box;       
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blue-header {
+  position: relative;
+  right: 210px;
+  bottom: 50px;
+
+  font-size: 42px;
+  color: white;
+  
+  text-align: left; 
+
+  text-align: center;
+  margin-bottom: 7px;
+  -webkit-text-stroke: 1px black;
+  font-family: Comic Sans MS;
+}
+
+.blue-box-img {
+  position: relative;
+  right: 180px;
+  bottom: 50px;
+
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  
+  border: 3px solid rgba(255, 255, 255, 1);
+}
+
+.blue-box-video {
+  justify-content: flex-end;
+  gap: 10px; 
+  margin-top: -100px;
+  
+  margin-right: 350px;
+}
+
+
+
+
+.news-square {
+  position: relative;       
+  top: -1001px;          
+  left: -303.3px;           
+  width: 206px;           
+  height: 400px;  
+  
+  background-color: rgba(137, 5, 5, 0.9); 
+  border: 0.5px solid rgba(65, 0, 0, 0.8);
+  border-radius: 0.5px; 
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+  padding: 10px;           
+  box-sizing: border-box;
+}
+
+.news-square img {
+  width: 100%;          
+  border-radius: 1px;
+  margin-bottom: 10px;   
+}
+
+.news-square a {
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 1.2;
+  font-family: Comic Sans MS;
+  color: white;
+}
+
+
+
+
+.blue-box-text a:link {
+  color: rgb(0, 0, 255);
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 1;     
+  
+    -webkit-text-stroke: 0.1px rgb(0, 0, 255);
+
+}
+
+.blue-box-text a:visited {
+  color: rgb(0, 0, 255);
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: bold;
+  
+   -webkit-text-stroke: 0.1px rgb(0, 0, 255);
+}
+
+.blue-box-text a:active {
+  color: rgb(254, 33, 35);
+  opacity: 1;  
+  
+  -webkit-text-stroke: 0.1px rgb(254, 33, 35);
+}
+
+
+.news-square a:visited {
+  color: rgb(0, 0, 255);
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.news-square a:link {
+  color: rgb(0, 0, 255);
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 1;     
+}
+
+.news-square a:active {
+  color: rgb(254, 33, 35);
+  opacity: 1;     
+}
+
+.extra-square {
+  position: relative;       
+  top: -994px;          
+  left: -303.3px;           
+  width: 206px;           
+  height: 594px;  
+  
+  background-color: rgba(137, 5, 5, 0.9); 
+  border: 0.5px solid rgba(65, 0, 0, 0.8);
+  border-radius: 0.5px; 
+  
+  color: white;
+  font-family: Comic Sans MS;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+  padding: 10px;           
+  box-sizing: border-box;
+}
+
+.extra-square img {
+  width: 100%;          
+  border-radius: 1px;
+  margin-bottom: 10px;   
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 50px;             
+  margin: -995px 0 10px 0;  
+  font-size: 28px;  
+}
+
+.carbine {
+  position: fixed;
+  right: 59px;      
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carbine-menu {
+  position: fixed;
+  right: 103px;      
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+}
+
+.carbine-menu a {
+  text-decoration: underline;
+  -webkit-text-stroke: 1px rgb(65, 0, 0);
+  opacity: 0.9;
+  color: rgb(90, 0, 0);
+  margin: 10px 0;      
+  text-align: center;
+  transition: color 0.1s;
+  font-size: 42px;
+}
+
+.carbine-menu a:hover {
+  color: blue;    
+  text-decoration-color: blue;
+  -webkit-text-stroke: blue; 
+}
+
+.ass {
+  position: fixed;
+  left: -110px;      
+  top: 84%;
+  transform: translateY(-50%);
+}
+
+.marquee-wrapper {
+  position: absolute;
+    
+  top: 7.1%;           
+  right: 0%;          
+  transform: translateY(-50%); 
+  width: 803px;       
+  overflow: hidden;
+  white-space: nowrap;
+  pointer-events: none; 
+  z-index: 1000;       
+}
+
+.marquee-debug {
+ background-color: darkred;  
+ padding: 5px; 
+}
+
+.marquee-text {
+  position: relative;
+  top: -0.9px;
+
+  display: inline-block;
+  padding-left: 100%;
+  font-size: 16px;
+  color: white;
+  font-family: Comic Sans MS;
+  -webkit-text-stroke: 0.5px black;
+  animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.tabs-menu {
+  position: absolute;
+  bottom: 4.3px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 60px;
+  font-size: 25px;
+}
+
+.tabs-menu a {
+  position: relative;
+  color: rgb(225, 225, 225);
+  -webkit-text-stroke: 0.4px rgb(0, 0, 0);
+  text-decoration: none; 
+}
+
+.tabs-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px; 
+  width: 100%;
+  height: 2px; 
+  background: white;
+  box-shadow: 0 0 0 0.4px black;
+}
+
+
+.footer-links a:visited {
+  color: rgb(0, 0, 255);
+  text-decoration: underline;
+}
+
+.footer-links a:link {
+  color: rgb(0, 0, 255);
+  opacity: 1;     
+}
+
+.footer-links a:active {
+  color: rgb(254, 33, 35);
+  opacity: 1;     
+}
+
+
+

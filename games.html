@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>superdogshittudios.com</title>
+    <link href="/style2.css" rel="stylesheet" type="text/css" media="all">
+    <link href="https://fonts.cdnfonts.com/css/domion-gothic" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Domion Gothic', sans-serif;
+        background-color: #000;
+        margin: 0;
+        padding: 0;
+      }
+      #muzzle-flash {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.1s ease-in-out;
+        z-index: 9999;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <div class="square">
+          <img src="fire2.gif" alt="Fire Animation" class="header-image">
+
+      <div class="tabs-menu">
+        <a href="/games.html">GAMES</a>
+        <a href="/videos.html">VIDEOS</a>
+        <a href="/music.html">MUSIC</a>
+        <a href="/store.html">STORE</a>
+        <a href="/more.html">MORE</a>
+      </div>
+      
+      <div class="square-text">
+  <div>Super</div>
+  <div class="indent1">Dogshit</div>
+  <div class="indent2">Studios</div>
+  
+   <a href="/index.html">
+    <img src="invisible.png" alt="Store" class="homeimage">
+  </a>
+  </div>
+       <div class="marquee-wrapper marquee-debug">     
+      <div class="marquee-text">
+        Coming soon! Play our long anticipated new release! Click on the games tab to play!
+      </div>
+    </div>
+    </div>
+    
+    <img src="carbine.png" alt="Hipoint 995 Carbine" width="130" height="500" class="carbine">
+          
+    <div class="carbine-menu">
+      <a href="/games.html">GAMES</a>
+      <a href="/videos.html">VIDEOS</a>
+      <a href="/music.html">MUSIC</a>
+      <a href="/store.html">STORE</a>
+      <a href="/more.html">MORE</a>
+    </div>
+    
+    <div class="blue-square">
+      <h1 class="blue-header">Games</h1>
+      <img src="sandy.jpg" alt="Update Image" class="blue-box-img">
+      <div class="blue-box-text">
+        <a href="https://www.roblox.com/home" class="playnow">PLAY</a>
+      </div>
+      
+      <img src="comingsoon2.jpg" alt="Update Image" class="blue-box-img2">
+      <div class="blue-box-text2">
+        <a href="/comingsoon.html" class="playnow2">PLAY</a>
+      </div>
+    </div>
+
+    <div class="news-square">
+      <img src="comingsoon.jpg" alt="New Release">
+      <a>Coming soon, Play our long anticipated new release!</a>
+      <a href="/games.html" class="playnow">PLAY NOW!</a>
+    </div>
+  
+    <div class="extra-square">
+      <img src="rake.jpg" alt="Extra tab">
+      <a>WIP Extra tab</a>
+    </div>
+
+    <div class="footer-links">
+      <a href="/about.html">about us</a>
+      <a href="/contact.html">contact us</a>
+      <a href="/links.html">other links</a>
+    </div>
+        
+    <audio id="background-music" autoplay loop>
+      <source src="musicS.MP3" type="audio/mpeg">
+    </audio>
+
+    <audio id="hover-sound" src="chaching.mp3" preload="auto"></audio>
+    <audio id="click-sound" src="shoot.mp3" preload="auto"></audio>
+    <div id="muzzle-flash"></div>
+
+    <script>
+      const music = document.getElementById('background-music');
+
+      function tryPlayMusic() {
+        music.play().catch(() => {
+          document.body.addEventListener('click', () => {
+            music.play();
+          }, { once: true });
+        });
+      }
+      tryPlayMusic();
+      window.addEventListener('pageshow', () => tryPlayMusic());
+
+      const hoverSound = document.getElementById('hover-sound');
+      const clickSound = document.getElementById('click-sound');
+      const links = document.querySelectorAll('.carbine-menu a');
+      const muzzleFlash = document.getElementById('muzzle-flash');
+
+      links.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+          hoverSound.currentTime = 0;
+          hoverSound.play();
+        });
+
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          clickSound.currentTime = 0;
+          clickSound.play();
+          muzzleFlash.style.opacity = 1;
+          setTimeout(() => muzzleFlash.style.opacity = 0, 55);
+          setTimeout(() => window.location.href = link.href, 280);
+        });
+      });
+    </script>
+  </body>
+</html>
