@@ -97,7 +97,7 @@ body {
 .blue-header {
   position: relative;
   right: 10px;
-  bottom: 50px;
+  bottom: 10px;
 
   font-size: 42px;
   color: white;
@@ -376,6 +376,7 @@ body {
   background: white;
   box-shadow: 0 0 0 0.4px black;
 }
+
 
 
 
