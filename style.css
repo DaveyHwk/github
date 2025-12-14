@@ -96,10 +96,10 @@ body {
 
 .blue-header {
   position: relative;
-  right: 10px;
-  bottom: 10px;
+  right: 60px;
+  bottom: 20px;
 
-  font-size: 20px;
+  font-size: 40px;
   color: white;
   
   text-align: left; 
@@ -376,6 +376,7 @@ body {
   background: white;
   box-shadow: 0 0 0 0.4px black;
 }
+
 
 
 
