@@ -99,7 +99,7 @@ body {
   right: 10px;
   bottom: 10px;
 
-  font-size: 42px;
+  font-size: 30px;
   color: white;
   
   text-align: left; 
@@ -376,6 +376,7 @@ body {
   background: white;
   box-shadow: 0 0 0 0.4px black;
 }
+
 
 
 
